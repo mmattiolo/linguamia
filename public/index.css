@@ -305,3 +305,70 @@ a.btn-link:hover {
     font-size: 0.9rem;
     padding: 20px 0;
 }
+
+
+/* Teacher images responsiveness */
+@media (max-width: 768px) {
+    .card-body .col-sm-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .card-body .col-sm-3 img {
+        width: 100px; /* Adjust as necessary */
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body .col-sm-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .card-body .col-sm-3 img {
+        width: 80px; /* Adjust as necessary */
+        height: auto;
+    }
+}
+
+
+/* Flashcard responsiveness */
+@media (max-width: 768px) {
+    .flashcard {
+        width: 100%;
+        margin-left: 0;
+    }
+    .btn-group {
+        margin-left: 0;
+    }
+    .question {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .flashcard {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* General responsiveness for mobile devices */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 10px;
+    }
+
+    .form-inline input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
