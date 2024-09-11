@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lingua Leap - Explore captivating stories to enhance your language skills.">
+  <meta name="author" content="Lingua Leap">
+  <title>Lingua Leap - Stories</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Lingua Mia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Your Library
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Study Sets</a>
+              <a class="dropdown-item" href="#">Notes</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCreate" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Create
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownCreate">
+              <a class="dropdown-item" href="#">Create Flashcards</a>
+              <a class="dropdown-item" href="#">Create Stories</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="./img/avatar.png" alt="User Avatar" class="rounded-circle" width="30" height="30">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownUser">
+              <a class="dropdown-header">Mateus Mattiolo</a>
+              <a class="dropdown-header">mateus@example.com</a>
+              <a class="dropdown-item" href="#">Achievements</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+              <a class="dropdown-item" href="#">Upgrade</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <h2>Explore Stories</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="container">
+                <div class="story-container">
+                    <div class="story">
+                        <div class="story-title" data-toggle="collapse" data-target="#story1" aria-expanded="false" aria-controls="story1">
+                            La Tortue et le Lièvre (The Tortoise and the Hare)
+                        </div>
+                        <div id="story1" class="collapse">
+                            <p id="storyText">
+                              Il était une fois un lièvre très fier de sa vitesse. Il se vantait souvent de la vitesse à laquelle il pouvait courir. Fatiguée de l'arrogance du lièvre, la tortue le défia à une course. Le lièvre, pensant que c'était une plaisanterie, accepta. A mi-course, le lièvre a décidé de faire une sieste, persuadé de pouvoir rattraper son retard à tout moment. Pendant ce temps, la tortue continuait à avancer lentement mais sûrement. Lorsque le lièvre s'est réveillé, il a vu la tortue franchir la ligne d'arrivée. La tortue avait gagné la course, prouvant que la lenteur et la régularité gagnaient la course.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dictionary-sidebar" id="dictionarySidebar">
+
+        <h2 style="margin-top: 10%; margin-bottom: 8%">Smart Dictionary</h2>
+        <div class="container">
+          <div class="story-container">
+            <div class="story">
+              <div class="story-title" data-toggle="collapse" data-target="#story1" aria-expanded="false" aria-controls="story1">
+                Definitions in English
+              </div>
+        <p class="text-secondary" id="word"></p>
+        <p class="text-secondary" id="definition"></p>
+        </div>
+        </div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    // JavaScript para definir a guia ativa com base na URL atual
+    document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname;
+      var page = path.split("/").pop();
+      var navbarLinks = document.querySelectorAll("#navbar .nav-link");
+      
+      navbarLinks.forEach(function(link) {
+        var href = link.getAttribute("href");
+        if (href === page) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    // Lista de traduções de francês para inglês
+    const translations = {
+        "Il": "He",
+        "était": "was",
+        "une fois": "once",
+        "lièvre": "hare",
+        "très": "very",
+        "fier": "proud",
+        "de": "of",
+        "sa": "his",
+        "vitesse": "speed",
+        "se": "himself",
+        "vantait": "boasted",
+        "souvent": "often",
+        "la": "the",
+        "laquelle": "which",
+        "pouvait": "could",
+        "courir": "run",
+        "Fatiguée": "Tired",
+        "l'arrogance": "arrogance",
+        "tortue": "tortoise",
+        "défia": "challenged",
+        "course": "race",
+        "pensant": "thinking",
+        "que": "that",
+        "c'était": "it was",
+        "plaisanterie": "joke",
+        "accepta": "accepted",
+        "A": "at",
+        "mi-course": "halfway",
+        "décidé": "decided",
+        "faire": "take",
+        "sieste": "nap",
+        "persuadé": "convinced",
+        "rattraper": "catch up",
+        "retard": "delay",
+        "tout": "all",
+        "moment": "moment",
+        "Pendant": "During",
+        "ce": "this",
+        "temps": "time",
+        "continuait": "continued",
+        "avancer": "move forward",
+        "lentement": "slowly",
+        "mais": "but",
+        "sûrement": "surely",
+        "Lorsque": "When",
+        "réveillé": "woke up",
+        "franchir": "cross",
+        "ligne": "line",
+        "d'arrivée": "finish",
+        "gagné": "won",
+        "prouvant": "proving",
+        "lenteur": "slowness",
+        "régularité": "steadiness",
+        "gagnaient": "won",
+        "la course": "the race"
+    };
+
+    // Função para buscar a definição de uma palavra
+    async function fetchDefinition(word) {
+        try {
+            const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+            const data = await response.json();
+            if (data.title && data.title === "No Definitions Found") {
+                return 'Definition not found';
+            } else {
+                return data[0].meanings[0].definitions[0].definition || 'Definition not found';
+            }
+        } catch (error) {
+            console.error('Error fetching definition:', error);
+            return 'Definition not found';
+        }
+    }
+
+    document.addEventListener('click', async function(event) {
+        const selection = window.getSelection();
+        const selectedWord = selection.toString().trim();
+
+        if (selectedWord) {
+            const wordElement = document.getElementById('word');
+            const definitionElement = document.getElementById('definition');
+
+            // Traduzir palavra se estiver no dicionário de traduções
+            const translatedWord = translations[selectedWord] || selectedWord;
+
+            // Destacar a palavra selecionada
+            const range = selection.getRangeAt(0);
+            const span = document.createElement('span');
+            span.classList.add('highlight');
+            range.surroundContents(span);
+
+            // Buscar definição
+            const definition = await fetchDefinition(translatedWord);
+
+            // Atualizar a barra lateral
+            wordElement.textContent = `Word: ${selectedWord} (${translatedWord})`;
+            definitionElement.textContent = `Definition: ${definition}`;
+        }
+    });
+  </script>
+</body>
+</html>

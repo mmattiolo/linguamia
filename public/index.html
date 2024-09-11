@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lingua Leap - Learn a language through stories and flashcards.">
+  <meta name="author" content="Lingua Leap">
+  <title>Lingua Mia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a href ="index.html" class="navbar-brand">Lingua Mia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Your Library
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Study Sets</a>
+              <a class="dropdown-item" href="#">Notes</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCreate" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Create
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownCreate">
+              <a class="dropdown-item" href="#">Create Flashcards</a>
+              <a class="dropdown-item" href="#">Create Stories</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        
+        <form class="form-inline my-2 my-lg-0 mr-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUser" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="./img/avatar.png" alt="User Avatar" class="rounded-circle" width="30" height="30">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownUser">
+              <a class="dropdown-header">Mateus Mattiolo</a>
+              <a class="dropdown-header">mateus@example.com</a>
+              <a class="dropdown-item" href="#">Achievements</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+              <a class="dropdown-item" href="#">Privacy Policy</a>
+              <a class="dropdown-item" href="#">Upgrade</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="container mt-2">
+    <div class="welcome">
+      <br >Welcome back,<strong> Mateus Mattiolo</strong></br>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card rounded-lg shadow-sm mb-4">
+          <div class="card-header">The best teachers</div>
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-sm-3">
+                <img src="./img/teacher1.png" alt="teacher 1" class="img-thumbnail rounded-circle">
+                <p style="margin: 0;" class="mt-2">Sophia</p>
+                <p><img src="./img/france.png" alt="France" width="20" height="15"></p>
+              </div>
+              <div class="col-sm-3">
+                <img src="./img/teacher2.png" alt="teacher 2" class="img-thumbnail rounded-circle">
+                <p style="margin: 0;"class="mt-2">Pedro</p>
+                <p><img src="./img/france.png" alt="France" width="20" height="15"></p>
+              </div>
+              <div class="col-sm-3">
+                
+                <img src="./img/teacher3.png" alt="teacher 3" class="img-thumbnail rounded-circle">
+                <p style="margin: 0;"class="mt-2">Luisa</p>
+                <img src="./img/canada.png" alt="Canada" width="20" height="15">
+              </div>
+              <div class="col-sm-3">
+                <img src="./img/teacher4.png" alt="teacher 4" class="img-thumbnail rounded-circle">
+                <p style="margin: 0;"class="mt-2">Andrea</p>
+                <p><img src="./img/brazil.png" alt="Brazil" width="20" height="15"></p>
+              </div>
+            </div>
+            <a href="#" class="btn btn-link mt-3">See more teachers</a>
+          </div>
+        </div>       
+          
+        <div class="card rounded-lg shadow-sm mb-4">
+          <div class="card-body">
+            <h2 class="card-title text-secondary">Master vocabulary with flashcards</h2>
+            <a href="flashcards.html" class="btn btn-secondary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-copy" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"/>
+            </svg>My flashcards</a>
+            <a href="flashcards.html" class="btn btn-secondary btn-lg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"/>
+            </svg>New set</a>
+          </div>
+        </div>
+
+        <div class="card rounded-lg shadow-sm mb-4">
+          <div class="card-body">
+            <h2 class="card-title text-secondary">Improve your reading skills</h2>
+            <a href="stories.html" class="btn btn-secondary btn-lg"><i class="bi bi-book-fill"></i>Stories</a>
+          </div>
+        </div>
+
+        <div class="card rounded-lg shadow-sm mb-4">
+          <div class="card-header">The best on YouTube!
+            <p>We recommend videos based on your learning preferences.</p>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card-body">
+                <p><strong>Comme une Française </strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="600" height="338" class="embed-responsive-item" src="https://www.youtube.com/embed/q5WjHCp4ueM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card-body">
+                <p><strong>lingoni FRENCH </strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="600" height="338" class="embed-responsive-item" src="https://www.youtube.com/embed/xAuq7KNOsVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card-body">
+                <p><strong>Easy French</strong></p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="600" height="338" class="embed-responsive-item" src="https://www.youtube.com/embed/40IAXVvjSDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+              <div class="col-sm-6">
+                <div class="card-body">
+                  <p><strong>ListenEF</strong></p>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Xlwzbe47Ggo?si=VMwG1s48vMLyUXe3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="card mb-4">
+          <div class="card-header">Learning Language</div>
+          <div class="card-body">
+            <p>French - Level A2</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+            </div>
+            <a href="#" class="btn btn-sm btn-link mt-2">View completed classes</a>
+          </div>
+        </div>
+
+
+        <div class="card mb-4">
+          <div class="card-header">Daily tasks</div>
+          <div class="card-body">
+
+
+            <div class="card mb-2" style="max-width: 450px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/dailytask4.jpg" class="img-fluid rounded-start w-100 h-100" alt="Listening" style="object-fit: cover; height: 150px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-1"style="background-color: white;">
+                    <p class="card-title mb-1"><small class="text-muted">Listening</small></p>
+                    <p class="card-text mb-1">Techniques for Effective Listening</p>
+                    <p class="card-text mb-1"><small class="text-muted">6 Lessons</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <div class="card mb-2" style="max-width: 450px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/dailytask3.jpg" class="img-fluid rounded-start w-150 h-100" alt="Reading" style="object-fit: cover; height: 100px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-1" style="background-color: white;">
+                    <p class="card-title mb-1"><small class="text-muted">Reading</small></p>
+                    <p class="card-text mb-1">Strategies for Proficient Reading</p>
+                    <p class="card-text mb-1"><small class="text-muted">4 Lessons</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-2" style="max-width: 450px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/dailytask1.jpg" class="img-fluid rounded-start w-150 h-100" alt="Reading" style="object-fit: cover; height: 100px;">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body p-1"style="background-color: white;">
+                    <p class="card-title mb-1"><small class="text-muted">Reading</small></p>
+                    <p class="card-text mb-1">Sharpening Your Reading Skills</p>
+                    <p class="card-text mb-1"><small class="text-muted">5 Lessons</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">French Group Class</div>
+          <div class="card-body">
+            <img src="./img/class.png" class="card-img-top img-fluid" alt="French Group Class">
+            <p style="margin: 0;"><i class="bi bi-check-circle-fill"> </i>Meet other students and practice together.</p>
+            <p style="margin: 0;"><i class="bi bi-check-circle-fill"> </i>Explore a variety of useful topics.</p>
+            <p style="margin: 0;"></p><i class="bi bi-check-circle-fill"> </i>Learn at a cost-effective price</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="mb-0">© 2024 Lingua Leap</p>
+      <p class="mb-0">Built by Mateus Mattiolo using Bootstrap, CSS, JavaScript, and HTML</p>
+      <p class="mb-0">TAV College - Web Design</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
